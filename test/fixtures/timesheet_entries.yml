@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: MyString
+  client: MyString
+  project_name: MyString
+  project_code: MyString
+  hours: MyString
+  billable: false
+  first_name: MyString
+  last_name: MyString
+  billable_rate: 1
+
+two:
+  date: MyString
+  client: MyString
+  project_name: MyString
+  project_code: MyString
+  hours: MyString
+  billable: false
+  first_name: MyString
+  last_name: MyString
+  billable_rate: 1
