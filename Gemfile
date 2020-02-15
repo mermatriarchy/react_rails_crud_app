@@ -44,7 +44,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.9'
   gem 'shoulda-matchers'
   gem 'simplecov'
-  gem 'factory_girl_rails'
+  gem 'factory_bot_rails'
   gem 'capybara'
   gem 'database_cleaner'
 end

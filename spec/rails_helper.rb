@@ -45,7 +45,7 @@ RSpec.configure do |config|
 
   #Configure FactoryGirl
   config.use_transactional_fixtures = false
-  config.include FactoryGirl::Syntax::Methods
+  config.include FactoryBot::Syntax::Methods
 
   # RSpec Rails can automatically mix in different behaviours to your tests
   # based on their file location, for example enabling you to call `get` and
