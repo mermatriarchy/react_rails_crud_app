@@ -18,7 +18,8 @@ class Api::V1::TimesheetEntriesController < Api::V1::BaseController
     def update
       entry = TimesheetEntry.find(params['id'])
       entry.update_attributes(entry_params)
-      respond_with TimesheetEntry, json: entry
+
+      respond_with entry, json: entry
     end
   
     private
