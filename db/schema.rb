@@ -10,14 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200215155217) do
+ActiveRecord::Schema.define(version: 20200215163541) do
 
   create_table "timesheet_entries", force: :cascade do |t|
     t.string   "date"
     t.string   "client_name"
     t.string   "project_name"
     t.string   "project_code"
-    t.string   "hours"
+    t.float    "hours"
     t.boolean  "billable"
     t.string   "contributor_first_name"
     t.string   "contributor_last_name"
