@@ -5,9 +5,7 @@ class TimesheetSeeder
     csv_text = File.read(Rails.root.join("db", "data", "timesheet_entries.csv"))
     csv = CSV.parse(csv_text, :headers => true)
     csv.each do |row|
-      date = Date.strptime(row["Date"], '%m/%d/%Y')
-
-      entry = TimesheetEntry.create!(date: date,
+      entry = TimesheetEntry.create!(date: Date.strptime(row["Date"], '%m/%d/%Y'),
                                      client_name: row["Client"],
                                      project_name: row["Project"],
                                      project_code: row["Code"],
