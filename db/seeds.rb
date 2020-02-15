@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+unless Rails.env.production?
+  TimesheetEntry.destroy_all
+end
+
+TimesheetSeeder.seed
